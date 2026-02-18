@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* THE FOODIES — global theme */
+:root{
+  --bg: 8 9 12;           /* near-black */
+  --fg: 245 245 245;      /* off-white */
+  --muted: 170 170 175;   /* muted text */
+  --card: 18 19 26;       /* card surface */
+  --border: 255 255 255;  /* border uses alpha in utility classes */
+  --accent: 214 181 91;   /* gold */
+  --accent2: 255 215 128; /* soft gold */
+}
+
+html,body{ height: 100%; }
+body{
+  color: rgb(var(--fg));
+  background:
+    radial-gradient(1200px 600px at 12% 10%, rgba(214,181,91,0.18), transparent 55%),
+    radial-gradient(900px 500px at 85% 0%, rgba(255,215,128,0.10), transparent 60%),
+    radial-gradient(800px 500px at 85% 80%, rgba(255,255,255,0.06), transparent 55%),
+    rgb(var(--bg));
+}
+
+::selection{ background: rgba(214,181,91,0.35); }
+
+/* nicer scrolling */
+*{ scroll-behavior: smooth; }
+
+@layer components{
+  .container-pad{ @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+
+  .card{
+    @apply rounded-2xl border shadow-sm;
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.10);
+  }
+
+  .muted{ color: rgba(255,255,255,0.72); }
+
+  .chip{
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: rgba(255,255,255,0.75);
+  }
+
+  .btn{
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary{
+    @apply btn;
+    color: rgb(10 10 14);
+    background: linear-gradient(135deg, rgba(214,181,91,1), rgba(255,215,128,1));
+    box-shadow: 0 10px 30px rgba(214,181,91,0.18);
+  }
+  .btn-primary:hover{ filter: brightness(1.03); transform: translateY(-1px); }
+
+  .btn-ghost{
+    @apply btn;
+    color: rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.12);
+  }
+  .btn-ghost:hover{ background: rgba(255,255,255,0.07); }
+
+  .btn-dark{
+    @apply btn;
+    color: rgba(255,255,255,0.95);
+    background: rgba(0,0,0,0.35);
+    border-color: rgba(255,255,255,0.10);
+  }
+  .btn-dark:hover{ background: rgba(0,0,0,0.50); }
+}
