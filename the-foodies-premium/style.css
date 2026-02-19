@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg,#000,#111);
+  color: white;
+  text-align: center;
+}
+.navbar {
+  background: black;
+  padding: 10px;
+  border-bottom: 1px solid gold;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  margin-right: 10px;
+}
+.brand {
+  color: gold;
+}
+.hero {
+  padding: 80px 20px;
+}
+.btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: #111;
+  padding: 25px;
+  border: 1px solid gold;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.about {
+  padding: 40px;
+}
+.partner input, .partner button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 250px;
+}
+.success-msg {
+  color: gold;
+  font-weight: bold;
+}
+footer {
+  padding: 20px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
