@@ -1,0 +1,1 @@
+Upload this folder to Vercel → New Project → Drag and Drop → Live.
