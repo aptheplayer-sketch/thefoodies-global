@@ -1,1 +1,0 @@
-THE FOODIES Enterprise System - Deploy directly to Vercel
