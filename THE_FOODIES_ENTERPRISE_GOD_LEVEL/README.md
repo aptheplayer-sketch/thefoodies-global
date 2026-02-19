@@ -1,1 +1,0 @@
-Upload this to GitHub root and deploy on Vercel. Replace public/logo.png with your logo.
