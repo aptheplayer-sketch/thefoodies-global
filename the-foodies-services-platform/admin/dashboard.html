@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h2>Admin Dashboard</h2>
+<div id="partners"></div>
+
+<script>
+let partners=JSON.parse(localStorage.getItem("partners")||"[]");
+let html="<h3>Total Partners: "+partners.length+"</h3>";
+partners.forEach(p=>{
+html+="<p>"+p.name+" | "+p.city+" | "+p.phone+"</p>";
+});
+document.getElementById("partners").innerHTML=html;
+</script>
+</body>
+</html>
