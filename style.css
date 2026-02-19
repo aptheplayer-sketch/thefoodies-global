@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+.navbar {
+  background: #111;
+  padding: 10px;
+}
+.logo {
+  width: 80px;
+}
+.hero {
+  padding: 50px;
+}
+.btn {
+  background: gold;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: #111;
+  padding: 20px;
+  border: 1px solid gold;
+}
+.partner input, .partner button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+footer {
+  padding: 20px;
+}
