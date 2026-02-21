@@ -1,8 +1,0 @@
-
-body{margin:0;font-family:Segoe UI,Arial;background:#0b0b0b;color:#fff}
-.header{padding:20px;background:#000;border-bottom:1px solid #222}
-.logo{color:#FFD700;font-size:22px;font-weight:bold}
-.section{padding:40px;text-align:center}
-input,button{padding:10px;margin:8px;border-radius:5px;border:none}
-button{background:#FFD700;color:#000;font-weight:bold;cursor:pointer}
-.card{background:#111;padding:15px;margin:10px;border-radius:8px}
