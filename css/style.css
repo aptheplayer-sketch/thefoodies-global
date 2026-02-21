@@ -1,0 +1,23 @@
+
+body { background:black; color:white; font-family:Arial; text-align:center; margin:0; }
+.logo { width:120px; margin-top:20px; }
+h1 { color:gold; }
+button, .btn {
+ background:gold;
+ color:black;
+ padding:12px 24px;
+ margin:10px;
+ border:none;
+ border-radius:8px;
+ font-weight:bold;
+ cursor:pointer;
+ text-decoration:none;
+ display:inline-block;
+}
+.card {
+ background:#111;
+ padding:20px;
+ margin:20px;
+ border-radius:10px;
+ border:1px solid gold;
+}
