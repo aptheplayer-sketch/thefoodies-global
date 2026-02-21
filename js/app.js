@@ -1,2 +1,0 @@
-
-console.log("THE FOODIES ENTERPRISE SAAS LIVE");
