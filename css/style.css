@@ -1,0 +1,8 @@
+
+body{margin:0;background:#000;color:#fff;font-family:Arial;text-align:center}
+.header{padding:30px}
+.logo{height:90px}
+.btn{display:inline-block;margin:10px;padding:12px 25px;background:#FFD700;color:#000;border-radius:8px;text-decoration:none;font-weight:bold}
+.section{margin-top:40px}
+.card{display:inline-block;width:250px;margin:15px;padding:20px;background:#111;border-radius:10px;border:1px solid #FFD700}
+footer{margin-top:40px;padding:20px;color:#aaa}
